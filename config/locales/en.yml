@@ -1,33 +1,43 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      ruby_on_rails: "Ruby on Rails"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      title: "Home"
+      sample_app: "Sample App"
+      this_is_the_home_page: "This is the home page for the"
+      sample_application: "sample application."
+      link_to_home: "http://www.railstutorial.org/"
+    help:
+      title: "Help"
+      get_help: "Get help on the Ruby on Rails Tutorial at the"
+      rails_tutorial_help_section: "Rails Tutorial help section"
+      to_get_help: "To get help on this sample app, see the"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      book: "book"
+      ruby_on_rails_tutorial_book: "Ruby on Rails Tutorial book"
+      link_to_help: "http://www.railstutorial.org/help"
+      link_to_book: "http://www.railstutorial.org/book"
+    about:
+      ruby_on_rails: "Ruby on Rails"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      book: "book"
+      and: "and"
+      the: "The"
+      is_a: "is a"
+      title: "About"
+      screencast: "screencast series"
+      to_teach: "to teach web development with"
+      this_is_the_sample_app: "This is the sample application for the tutorial."
+      link_to_about: "http://www.railstutorial.org/about"
+      link_to_screencast: "http://screencasts.railstutorial.org/"
+      link_to_home: "http://www.railstutorial.org/"
+      link_to_book: "http://www.railstutorial.org/book"
+    contact:
+      title: "Contact"
+      contact_the_ruby_on_rails: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page"
+      link_to_contact: "http://www.railstutorial.org/contact"
