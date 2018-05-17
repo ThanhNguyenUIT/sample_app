@@ -1,9 +1,26 @@
 en:
   layouts:
+    header:
+      sample_app: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      the: "The"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      by: "by"
+      michael_hartl: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      link_to_home: "http://www.railstutorial.org/"
+      link_to_michael: "http://www.michaelhartl.com/"
+      link_to_news: "http://news.railstutorial.org/"
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
+      welcome: "Welcome to the Sample App"
       ruby_on_rails: "Ruby on Rails"
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
       title: "Home"
@@ -11,6 +28,9 @@ en:
       this_is_the_home_page: "This is the home page for the"
       sample_application: "sample application."
       link_to_home: "http://www.railstutorial.org/"
+      signup_now: "Sign up now!"
+      link_to_rails: "http://rubyonrails.org/"
+      rails_logo: "Rails logo"
     help:
       title: "Help"
       get_help: "Get help on the Ruby on Rails Tutorial at the"
@@ -41,3 +61,7 @@ en:
       contact_the_ruby_on_rails: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
       link_to_contact: "http://www.railstutorial.org/contact"
+  users:
+    new:
+      signup: "Sign up"
+      this_will_be_signup: "This will be a signup page for new users."
