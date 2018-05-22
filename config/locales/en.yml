@@ -1,4 +1,8 @@
 en:
+  shared:
+    error_messages:
+      the_form_contains: "The form contains %{error}"
+      couldnt_found: "Couldn't found User with ID: %{id}"
   layouts:
     header:
       sample_app: "Sample App"
@@ -18,6 +22,7 @@ en:
       link_to_news: "http://news.railstutorial.org/"
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+      welcome: "Welcome to the Sample App!"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -65,3 +70,8 @@ en:
     new:
       signup: "Sign up"
       this_will_be_signup: "This will be a signup page for new users."
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      create_my_account: "Create my account"
