@@ -1,14 +1,15 @@
 en:
-  shared:
-    error_messages:
-      the_form_contains: "The form contains %{error}"
-      couldnt_found: "Couldn't found User with ID: %{id}"
   layouts:
     header:
-      sample_app: "Sample App"
-      home: "Home"
+      account: "Account %{bold_tag}"
       help: "Help"
+      home: "Home"
       login: "Log in"
+      logout: "Log out"
+      profile: "Profile"
+      sample_app: "Sample App"
+      settings: "Settings"
+      users: "Users"
     footer:
       the: "The"
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
@@ -23,6 +24,16 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
       welcome: "Welcome to the Sample App!"
+  sessions:
+    new:
+      invalid_email_password: "Invalid email/password combination"
+      login: "Log in"
+      new_user: "New user?"
+      signup_now: "Sign up now!"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains %{error}"
+      couldnt_found: "Couldn't found User with ID: %{id}"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
