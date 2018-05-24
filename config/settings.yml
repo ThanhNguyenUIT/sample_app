@@ -7,3 +7,5 @@ email:
 password:
   length:
     minimum: 6
+remember_me:
+  checked: "1"

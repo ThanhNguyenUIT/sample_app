@@ -30,6 +30,7 @@ en:
       login: "Log in"
       new_user: "New user?"
       signup_now: "Sign up now!"
+      remember_me: "Remember me on this computer"
   shared:
     error_messages:
       the_form_contains: "The form contains %{error}"
