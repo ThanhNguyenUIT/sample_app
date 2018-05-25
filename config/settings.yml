@@ -4,6 +4,10 @@ name:
 email:
   length:
     maximum: 255
+gravatar:
+  size:
+    default: 80
+    small: 50
 password:
   length:
     minimum: 6
