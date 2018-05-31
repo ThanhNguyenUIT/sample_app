@@ -1,4 +1,8 @@
 en:
+  account_activations:
+    activated: "Account activated!"
+    invalid_link: "Invalid activation link"
+    activation: "Account activation"
   layouts:
     header:
       account: "Account %{bold_tag}"
@@ -31,6 +35,7 @@ en:
       new_user: "New user?"
       signup_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+      not_activated: "Account not activated. Check your email for the activation link."
   shared:
     error_messages:
       the_form_contains: "The form contains %{error}"
@@ -79,6 +84,12 @@ en:
       contact_the_ruby_on_rails: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
       link_to_contact: "http://www.railstutorial.org/contact"
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi %{user_name}"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
   users:
     edit:
       change: "change"
@@ -99,6 +110,7 @@ en:
       please_log_in: "Please log in."
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+      check_email: "Please check your email to activate your account."
     user:
       delete: "delete"
       you_sure: "You sure?"
