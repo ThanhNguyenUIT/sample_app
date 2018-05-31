@@ -70,6 +70,7 @@ en:
       the_form_contains: "The form contains %{error}"
       couldnt_found: "Couldn't found User with ID: %{id}"
       delete_failed: "Failed to delete user"
+      relationship_not_found: "You didn't follow this user"
     home:
       welcome: "Welcome to the Sample App"
       ruby_on_rails: "Ruby on Rails"
@@ -85,6 +86,9 @@ en:
     micropost_form:
       compose_new: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
     user_info:
       view_my_profile : "view my profile"
     user_home:
@@ -156,6 +160,9 @@ your password will stay as it is."
     index:
       all_users: "All users"
       user_delete: "User deleted"
+    follow: "Follow"
+    following: "Following"
+    followers: "Followers"
     new:
       signup: "Sign up"
       this_will_be_signup: "This will be a signup page for new users."
@@ -168,6 +175,10 @@ your password will stay as it is."
       check_email: "Please check your email to activate your account."
     show:
       microposts: "Microposts (%{count})"
+    show_follow:
+      micropost: "Microposts:"
+      view_my_profile: "view my profile"
+    unfollow: "Unfollow"
     user:
       delete: "delete"
       you_sure: "You sure?"

@@ -4,7 +4,11 @@ class Micropost < ApplicationRecord
     length: {maximum: Settings.micropost.length.maximum}
   validates :user_id, presence: true
   validate  :picture_size
-  scope :load_by_user_id, ->user_id{where(user_id: user_id)}
+  scope :feed, ->user_id do
+    following_ids = Relationship.followed_ids_by_follower_id user_id
+    all_user_ids = following_ids + [user_id]
+    where user_id: all_user_ids
+  end
   scope :order_desc, ->{order(created_at: :desc)}
   mount_uploader :picture, PictureUploader
 
