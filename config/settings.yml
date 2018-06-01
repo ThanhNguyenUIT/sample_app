@@ -11,5 +11,6 @@ gravatar:
 password:
   length:
     minimum: 6
+password_reset_expired: 2
 remember_me:
   checked: "1"
