@@ -8,9 +8,15 @@ gravatar:
   size:
     default: 80
     small: 50
+micropost:
+  length:
+    maximum: 140
 password:
   length:
     minimum: 6
 password_reset_expired: 2
+picture:
+  size:
+    maximum: 5
 remember_me:
   checked: "1"
