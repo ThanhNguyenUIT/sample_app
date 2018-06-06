@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_accessor :remember_token, :activation_token, :reset_token
+  has_many :microposts, dependent: :destroy
   validates :email, presence: true,
                     length: {maximum: Settings.email.length.maximum},
                     format: {with: VALID_EMAIL_REGEX},
@@ -38,6 +39,10 @@ class User < ApplicationRecord
 
   def downcase_email
     email.downcase!
+  end
+
+  def feed
+    Micropost.load_by_user_id(id).order_desc
   end
 
   def forget

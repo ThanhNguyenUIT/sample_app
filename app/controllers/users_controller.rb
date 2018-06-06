@@ -37,6 +37,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url unless @user.activated?
+    @microposts = @user.microposts.paginate page: params[:page]
   end
 
   def update
@@ -62,14 +63,6 @@ class UsersController < ApplicationController
     return if (@user = User.find_by id: params[:id])
     flash[:danger] = t "shared.error_messages.couldnt_found", id: params[:id]
     redirect_to users_url
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "users.new.please_log_in"
-      redirect_to login_url
-    end
   end
 
   def user_params

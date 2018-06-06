@@ -28,6 +28,17 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
       welcome: "Welcome to the Sample App!"
+  max_file_size: "Maximum file size is 5MB. Please choose a smaller file."
+  microposts:
+    created: "Micropost created!"
+    deleted: "Micropost deleted"
+    delete_failed: "Delete micropost failed!"
+    less_than: "should be less than 5MB"
+    micropost:
+      ago: "ago."
+      delete: "delete"
+      posted: "Posted"
+      you_sure: "You sure?"
   password_resets:
     couldnt_found: "Couldn't found User with Email: %{email}"
     create:
@@ -59,6 +70,25 @@ en:
       the_form_contains: "The form contains %{error}"
       couldnt_found: "Couldn't found User with ID: %{id}"
       delete_failed: "Failed to delete user"
+    home:
+      welcome: "Welcome to the Sample App"
+      ruby_on_rails: "Ruby on Rails"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      title: "Home"
+      sample_app: "Sample App"
+      this_is_the_home_page: "This is the home page for the"
+      sample_application: "sample application."
+      link_to_home: "http://www.railstutorial.org/"
+      signup_now: "Sign up now!"
+      link_to_rails: "http://rubyonrails.org/"
+      rails_logo: "Rails logo"
+    micropost_form:
+      compose_new: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_my_profile : "view my profile"
+    user_home:
+      micropost_feed: "Micropost Feed"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -136,6 +166,8 @@ your password will stay as it is."
       confirmation: "Confirmation"
       create_my_account: "Create my account"
       check_email: "Please check your email to activate your account."
+    show:
+      microposts: "Microposts (%{count})"
     user:
       delete: "delete"
       you_sure: "You sure?"
