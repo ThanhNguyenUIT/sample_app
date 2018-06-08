@@ -31,13 +31,26 @@ class UsersController < ApplicationController
     @users = User.activated.paginate page: params[:page]
   end
 
+  def following
+    @title = t "users.following"
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t "users.followers"
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
+  end
+
   def new
     @user = User.new
   end
 
   def show
     redirect_to root_url unless @user.activated?
-    @microposts = @user.microposts.paginate page: params[:page]
+    @microposts = @user.microposts.order_desc.paginate page: params[:page]
+    @relationship = current_user.active_relationships.find_by followed_id: @user.id
   end
 
   def update
